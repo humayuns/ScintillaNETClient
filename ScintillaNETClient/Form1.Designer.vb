@@ -22,9 +22,28 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.Scintilla1 = New ScintillaNET.Scintilla()
+        Me.SuspendLayout()
+        '
+        'Scintilla1
+        '
+        Me.Scintilla1.Location = New System.Drawing.Point(76, 40)
+        Me.Scintilla1.Name = "Scintilla1"
+        Me.Scintilla1.Size = New System.Drawing.Size(579, 431)
+        Me.Scintilla1.TabIndex = 0
+        Me.Scintilla1.Text = "Scintilla1"
+        '
+        'Form1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(846, 587)
+        Me.Controls.Add(Me.Scintilla1)
+        Me.Name = "Form1"
         Me.Text = "Form1"
+        Me.ResumeLayout(False)
+
     End Sub
+    Friend WithEvents Scintilla1 As ScintillaNET.Scintilla
 
 End Class
